@@ -1,0 +1,5 @@
+name "x5"
+description "A minimal D application."
+authors "Qila"
+copyright "Copyright © 2021, Qila"
+license "MPL-2.0"

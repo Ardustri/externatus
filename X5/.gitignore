@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/x5
+x5.so
+x5.dylib
+x5.dll
+x5.a
+x5.lib
+x5-test-*
+*.exe
+*.o
+*.obj
+*.lst

@@ -1,0 +1,8 @@
+.vscode
+build
+dist
+*.o
+*.so
+*.a
+*.dSYM
+__pycache__/
