@@ -13,4 +13,5 @@ except:
 	quit()
 
 for changes in watch(path):
+	os.system("clear")
 	os.system(command)

@@ -1,8 +1,13 @@
 from command import *
-import sys, os
+from functions import *
 
-command_name:str = sys.argv[1]
-command_args:str = sys.argv[2]
+for i in command_list:
+	if command_list[i] == command_type[0]:
+		standalone()
+		break
+	elif command_list[i] == command_type[1]:
+		arguments()
+		break
 
 try:
 	command_opts:str = sys.argv[3]

@@ -1,5 +1,8 @@
 {
-	"setup": "sh script/setup.sh",
-	"install": "sh script/install.sh",
+	"command": {
+		"setup": "sh script/setup.sh",
+		"install": "sh script/install.sh",
+		"push": "sh script/git.sh"
+	},
 	"push": "sh script/git.sh"
 }
