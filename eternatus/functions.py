@@ -1,14 +1,6 @@
 import os, sys
-import load, out
+import out
 import command as _command
-def run_command(command, count=0):
-	for i in range(count):
-		os.system(command)
-
-def printinfo():
-	out.info("NAME: ", load.f["name"])
-	out.info("VERSION:", load.f["version"])
-	out.info("COMMAND_LIST: \n", load.f["command"])
 
 def ask():
 	command_name = None
@@ -18,6 +10,7 @@ def ask():
 		command_name = sys.argv[1]
 	except:
 		out.error("No command suplied")
+		quit()
 	try:
 		command_args = sys.argv[2]
 	except:
@@ -34,10 +27,14 @@ command = ask()
 def check_command():
 	global command
 	if command["command_args"] == None:
-		del command["command_args"]
+		command["command_args"] = None
 	if command["command_opts"] == None:
-		del command["command_opts"]
+		command["command_opts"] = None
 
 def execute():
 	global command
+	for i in _command.command_list.keys():
+		if i == command["command_name"]:
+			_command.command_list[str(i)](command)
+			break
 	check_command()

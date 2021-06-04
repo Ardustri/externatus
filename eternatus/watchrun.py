@@ -1,17 +1,6 @@
 from watchgod import watch
 import sys, os
 
-try:
-	path = sys.argv[1]
-except:
-	print("Invalid Path")
-	quit()
-try:
-	command = sys.argv[2]
-except:
-	print("Invalid command")
-	quit()
-
-for changes in watch(path):
-	os.system("clear")
-	os.system(command)
+def watch_and_run(args):
+	for changes in watch(args["command_args"]):
+		os.system(args["command_opts"])

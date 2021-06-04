@@ -1,0 +1,8 @@
+{
+	"name": "helo",
+	"version": 1.0,
+	"command": {
+		"test": "python3 __test__.py",
+		"clean": "rm -rf build dist __pycache__/"
+	}
+}
