@@ -1,1 +1,2 @@
-pass
+import functions
+functions.execute()

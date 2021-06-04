@@ -1,2 +1,6 @@
 import functions
-functions.execute()
+def main():
+	functions.execute()
+
+if __name__ == "__main__":
+	main()
