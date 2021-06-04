@@ -23,5 +23,11 @@ def show_info(args):
 	out.info(f"VERSION: {load.f['version']}")
 	out.info(f"COMMAND_LIST: \n{load.f['command']}")
 
+def hello(args):
+	print("helo yati")
+
+def hello_qila(args):
+	os.system("php test.php")
+
 command_flag = ["-c", "-t", "-h", "--timer", "--clear", "--help"]
-command_list = {"init": init, "run": run, "show_info": show_info, "watch": watch_and_run}
+command_list = {"init": init, "run": run, "show_info": show_info, "watch": watch_and_run, "yati": hello, "aqila": hello_qila, }
