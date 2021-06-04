@@ -22,6 +22,6 @@ def show_info(args):
 	out.succeed(f"NAME: {load.f['name']}")
 	out.info(f"VERSION: {load.f['version']}")
 	out.info(f"COMMAND_LIST: \n{load.f['command']}")
-
+s
 command_flag = ["-c", "-t", "-h", "--timer", "--clear", "--help"]
 command_list = {"init": init, "run": run, "show_info": show_info, "watch": watch_and_run}
