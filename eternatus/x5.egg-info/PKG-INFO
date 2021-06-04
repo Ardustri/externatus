@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: x5
+Version: 1.0.0
+Summary: x5 NexT Gen Project Manager
+Home-page: https://github.com/ardustri/Externatus/eternatus
+Author: Ardustri
+Author-email: info@externatus.com
+License: GPL3
+Description: # x5 NexT Gen Project Manager
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
