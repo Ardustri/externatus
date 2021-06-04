@@ -1,3 +1,0 @@
-[console_scripts]
-x5 = __main__:main
-
