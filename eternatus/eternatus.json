@@ -2,7 +2,7 @@
 	"name": "helo",
 	"version": 1.0,
 	"command": {
-		"test": "python3 __test__.py",
+		"test": "echo hello",
 		"clean": "rm -rf build dist __pycache__/",
 		"git": "sh script/git.sh"
 	}

@@ -19,7 +19,7 @@ def run(args, opts=None, flag=None):
 		os.system(check_command(args["command_args"]))
 
 def show_info(args):
-	out.info(f"NAME: {load.f['name']}")
+	out.succeed(f"NAME: {load.f['name']}")
 	out.info(f"VERSION: {load.f['version']}")
 	out.info(f"COMMAND_LIST: \n{load.f['command']}")
 
